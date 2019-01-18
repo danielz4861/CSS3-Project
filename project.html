@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+    <title>Title</title>
+    <style>
+        header {
+            color: pink;
+            margin: 10px;
+            text-align: center;
+            text-shadow: 5px 5px black;
+            font-family: 'VT323', monospace;
+            font-size: 25px;
+            animation-name: pop-effect;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            transition: font-size 1s;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, blue, pink);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header:hover {
+            font-size: 55px;
+            color: black;
+            text-shadow: 5px 5px red;
+        }
+
+        @keyframes pop-effect {
+            from {
+                transform: translate(0px, -200px);
+            }
+            to {
+                transform: translate(0px, 0px);
+            }
+        }
+        #cake{
+            background-image: url("cake.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            width: 350px;
+            animation-name: fade;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+            transition: width 2s, height 2s, transform 2s;
+        }
+        #fade{
+            z-index: -1;
+            animation: fade 3s ease-out 1s 1 normal;
+        }
+        @keyframes fade{
+            0% {opacity: 0;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        #directions {
+            text-align: center;
+            border: solid black;
+            opacity: 0;
+            font-size: 35px;
+            font-family: 'VT323', monospace;
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> How To Buy A Cake 101!!</h1>
+    </header>
+    <div id="fade"></div>
+  
+    <div id="cake">
+        <img src="cake.jpg" height= "350px" width="350px">
+    </div>
+    
+    <div id="directions"></div>
+   
+       <ul>
+    <li>First you'll need some money from either the bank or from your mom's wallet would work just fine!</li>
+    
+    <li>Next, walk to your closest bakery and ask them for a birthday cake.</li>
+    
+    <li>Then, pick out a cake of your choice.</li>
+    
+    <li>Use the money that you have or stole, and pay for the cake.</li>
+    
+    <li>Walk home carefully with the cake.</li>
+    
+    <li> Once you get home, put the cake in the fridge to make sure the cake doesn't melt.</li>
+    
+    <li>When its time to eat the cake. Take the cake out of the box and light up a few candles.</li>
+    
+    <li>Sing your Mom the happy birthday song and then enjoy a slice of the cake with everyone.</li>
+    
+    <li>Your mom then realizes that there was a $100 missing in her wallet and she immediately realizes that your broke and questions how you paid for the cake.</li>
+    
+  <ul>
+</div>
+</body>
+   
+
+</html>
